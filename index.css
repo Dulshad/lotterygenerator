@@ -1,0 +1,81 @@
+:root {
+    --background-color: #65314A;
+    --text-color: whitesmoke;
+    --border-color: black;
+    --disc-background-color: whitesmoke;
+    --disc-text-color: black;
+    --button-background-color: whitesmoke;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    font-family: "Play", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.main-title {
+    margin: 1em;
+}
+
+#number-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0;
+}
+
+#number-container p {
+    margin-bottom: 1em;
+    font-size: 1.125rem;
+}
+
+#discs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.disc {
+    background-color: var(--disc-background-color);
+    border: 1px solid var(--border-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--disc-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-btn {
+    align-self: center;
+    margin-bottom: 2em;
+    padding: 0.75em;
+    border-radius: 10px;
+    background-color: var(--button-background-color);
+    font-family: inherit;
+    font-weight: bold;
+    border: 1px solid var(--border-color);
+}
